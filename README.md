@@ -37,6 +37,31 @@
 					var num2 = document.getElementById('num2').value * 1.0;
 					document.getElementById("result").innerHTML= (num1 + num2) / 2;
 				}
+				
+				function pot2Numbers()
+				{
+					var num1 = document.getElementById('num1').value * 1.0;
+					var num2 = document.getElementById('num2').value * 1.0;
+					document.getElementById("result").innerHTML= num1**num2;
+				}
+				
+				function wur2Numbers()
+				{
+					var num1 = document.getElementById('num1').value * 1.0;
+					var num2 = document.getElementById('num2').value * 1.0;
+					document.getElementById("result").innerHTML= (num1)**(num2/2);
+				}
+				
+				function log2Numbers()
+				{
+					var num1 = document.getElementById('num1').value * 1.0;
+					var num2 = document.getElementById('num2').value * 1.0;
+					document.getElementById("result").innerHTML= Math.log(num1) /Math.log(num2);
+				}
+				
+				
+				
+
 
 
 
@@ -49,7 +74,7 @@
 		<form>
 		  <label for="num1">First Number:</label>
 		  <input type="text" id="num1" name="num1"><br><br>
-		  <label for="num2">Second Number:</label>
+		  <label for="num2">Second Number (1 für die Quadratwurzel,ist die Zahl fürs Potenzieren):</label>
 		  <input type="text" id="num2" name="num2"><br><br>
 		</form>
 		<p>
@@ -68,6 +93,15 @@
 		</button>
 		<button onclick="dur2Numbers()">
 			Durchschnitt
+		</button>
+		<button onclick="pot2Numbers()">
+			Potenzieren
+		</button>
+		<button onclick="wur2Numbers()">
+			Wurzelziehen
+		</button>
+		<button onclick="log2Numbers()">
+			Logarithmus
 		</button>
 
 		
